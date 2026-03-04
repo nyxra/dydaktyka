@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Życzenia dla Tato</title>
+<style>
+  body {
+    font-family: monospace;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .heart {
+    color: red;
+    white-space: pre;
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div id="text"></div>
+<div class="heart" id="heart"></div>
+
+<script>
+const dadName = "Tato";
+
+const messages = [
+  `Życzenia dla ${dadName}`,
+  `Drogi ${dadName}!`,
+  "Wszystkiego najlepszego z okazji urodzin! Życzę zdrowia, szczęścia i sukcesów :)",
+  "Niech każdy dzień przynosi radość i uśmiech :)",
+  "Dziękuję za Twoje wsparcie i miłość :)",
+  "Z miłością, Twoja córka Veronika! :)",
+  "Niech ten dzień będzie wyjątkowy!"
+];
+
+const heartShape = [
+  "  **   **  ",
+  " *  * *  * ",
+  "*    *    *",
+  " *       * ",
+  "  *     *  ",
+  "   *   *   ",
+  "    * *    ",
+  "     *     "
+];
+
+const textDiv = document.getElementById("text");
+const heartDiv = document.getElementById("heart");
+
+function typeText(text, delay) {
+  return new Promise(resolve => {
+    let i = 0;
+    const interval = setInterval(() => {
+      textDiv.innerHTML += text[i];
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval);
+        textDiv.innerHTML += "<br>";
+        resolve();
+      }
+    }, delay);
+  });
+}
+
+async function showMessages() {
+  for (let msg of messages) {
+    await typeText(msg, 20);
+  }
+
+  // Wyświetlanie serca
+  for (let line of heartShape) {
+    heartDiv.innerHTML += line + "<br>";
+    await new Promise(r => setTimeout(r, 50));
+  }
+}
+
+showMessages();
+</script>
+
+</body>
+</html>
