@@ -13,14 +13,31 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #text {
+    font-size: 2em; /* крупный текст для телефона и ПК */
+    line-height: 1.5em;
+    margin-bottom: 30px;
   }
 
   .heart {
     color: red;
     white-space: pre;
-    font-size: 20px;
-    line-height: 18px;
-    margin-top: 20px;
+    font-size: 3em; /* крупное сердечко */
+    line-height: 1em;
+  }
+
+  /* Адаптив для маленьких экранов */
+  @media (max-width: 600px) {
+    #text {
+      font-size: 1.5em;
+    }
+    .heart {
+      font-size: 2em;
+    }
   }
 </style>
 </head>
@@ -30,16 +47,16 @@
 <div class="heart" id="heart"></div>
 
 <script>
-const dadName = "Tata";
+const dadName = "TATO"; // большие буквы
 
 const messages = [
-  `Życzenia dla ${dadName}`,
-  `Drogi ${dadName}!`,
-  "Wszystkiego najlepszego z okazji urodzin! Życzę zdrowia, szczęścia i sukcesów :)",
-  "Niech każdy dzień przynosi radość i uśmiech :)",
-  "Dziękuję za Twoje wsparcie i miłość :)",
-  "Z miłością, Twoja córka Veronika! :)",
-  "Niech ten dzień będzie wyjątkowy!"
+  `ŻYCZENIA DLA ${dadName}`,
+  `DROGI ${dadName}!`,
+  "WSZYSTKIEGO NAJLEPSZEGO Z OKAZJI URODZIN! ŻYCZĘ ZDROWIA, SZCZĘŚCIA I SUKCESÓW :)",
+  "NIECH KAŻDY DZIEŃ PRZYNOSI RADOŚĆ I UŚMIECH :)",
+  "DZIĘKUJĘ ZA TWOJE WSPARCIE I MIŁOŚĆ :)",
+  "Z MIŁOŚCIĄ, TWOJA CÓRKA VERONIKA! :)",
+  "NIECH TEN DZIEŃ BĘDZIE WYJĄTKOWY!"
 ];
 
 const heartShape = [
@@ -76,7 +93,7 @@ async function showMessages() {
     await typeText(msg, 20);
   }
 
-  // Wyświetlanie serca
+  // Показ сердца
   for (let line of heartShape) {
     heartDiv.innerHTML += line + "<br>";
     await new Promise(r => setTimeout(r, 50));
@@ -88,4 +105,3 @@ showMessages();
 
 </body>
 </html>
-
