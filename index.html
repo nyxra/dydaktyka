@@ -1,107 +1,56 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8">
-<title>Życzenia dla Tato</title>
-<style>
-  body {
-    font-family: monospace;
-    background-color: #111;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 10px;
-    text-align: center;
-  }
+<html> 
+<head> 
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2"> 
+</head> 
+<body> 
+<table width=95% border="1" align="center"> 
+<tr> 
+<td width=18% align=center> 
+<a href="avks_2z.html" target="strony">Zadanie2</a> 
+<br> 
+<a href="avks_3x.html" target="strony">Zadanie3</a> 
+<br>
+<a href="Avks_4x.html" target="strony">Zadanie4</a> 
+<br>
+<a href="avks_5z_1.html" target="strony">Zadanie5_1</a> 
+<br>
+<a href="avks_5z_2.html" target="strony">Zadanie5_2</a> 
+<br>
+<a href="avks_5z_3.html" target="strony">Zadanie5_3</a> 
+<br>
+<a href="avks_5z_4.html" target="strony">Zadanie5_4</a> 
+<br>
+<a href="avks_z6.html" target="strony">Zadanie6</a> 
+<br>
+<a href="avks_z7.html" target="strony">Zadanie7</a> 
+<br>
+<a href="avks_z8.html" target="strony">Zadanie8</a> 
+<br>
+<a href="avks_z9.html" target="strony">Zadanie9</a> 
+<br>
+<a href="avks_z10.html" target="strony">Zadanie10</a> 
+<br>
+<a href="avks_z11.html" target="strony">Zadanie11</a> 
+<br>
+<a href="avks_z12.htmk" target="strony">Zadanie12</a> 
+<br>
+<a href="avks_z13.html" target="strony">Zadanie13</a> 
+<br>
+<a href="http://www.kuratorium.gda.pl" target="strony">Zadanie14</a> 
+<br>
+<a href="http://www.kuratorium.gda.pl" target="strony">Zadanie15</a> 
+<br>
+<a href="http://www.wp.pl" target="strony">Portal WP</a> 
+</td> 
+<td align=center><iframe width=650 height=650 name="strony" src="start.html" border="0"></iframe> 
+</td> 
+<td width=18% align=center><a href="start.html" target="strony">Start</a> 
+</td> 
+<td width=18% align="center">  
+                 <b>prawe menu</b> 
 
-  #text {
-    font-size: 2em; /* крупный текст для телефона и ПК */
-    line-height: 1.5em;
-    margin-bottom: 30px;
-  }
-
-  .heart {
-    color: red;
-    white-space: pre;
-    font-size: 3em; /* крупное сердечко */
-    line-height: 1em;
-  }
-
-  /* Адаптив для маленьких экранов */
-  @media (max-width: 600px) {
-    #text {
-      font-size: 1.5em;
-    }
-    .heart {
-      font-size: 2em;
-    }
-  }
-</style>
-</head>
-<body>
-
-<div id="text"></div>
-<div class="heart" id="heart"></div>
-
-<script>
-const dadName = "TATO"; // большие буквы
-
-const messages = [
-  `ŻYCZENIA DLA ${dadName}`,
-  `DROGI ${dadName}!`,
-  "WSZYSTKIEGO NAJLEPSZEGO Z OKAZJI URODZIN! ŻYCZĘ ZDROWIA, SZCZĘŚCIA I SUKCESÓW :)",
-  "NIECH KAŻDY DZIEŃ PRZYNOSI RADOŚĆ I UŚMIECH :)",
-  "DZIĘKUJĘ ZA TWOJE WSPARCIE I MIŁOŚĆ :)",
-  "Z MIŁOŚCIĄ, TWOJA CÓRKA VERONIKA! :)",
-  "NIECH TEN DZIEŃ BĘDZIE WYJĄTKOWY!"
-];
-
-const heartShape = [
-  "  **   **  ",
-  " *  * *  * ",
-  "*    *    *",
-  " *       * ",
-  "  *     *  ",
-  "   *   *   ",
-  "    * *    ",
-  "     *     "
-];
-
-const textDiv = document.getElementById("text");
-const heartDiv = document.getElementById("heart");
-
-function typeText(text, delay) {
-  return new Promise(resolve => {
-    let i = 0;
-    const interval = setInterval(() => {
-      textDiv.innerHTML += text[i];
-      i++;
-      if (i >= text.length) {
-        clearInterval(interval);
-        textDiv.innerHTML += "<br>";
-        resolve();
-      }
-    }, delay);
-  });
-}
-
-async function showMessages() {
-  for (let msg of messages) {
-    await typeText(msg, 20);
-  }
-
-  // Показ сердца
-  for (let line of heartShape) {
-    heartDiv.innerHTML += line + "<br>";
-    await new Promise(r => setTimeout(r, 50));
-  }
-}
-
-showMessages();
-</script>
-
-</body>
-</html>
+</tr> 
+</table> 
+</body> 
+</html> 
+ 
