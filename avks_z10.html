@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Avksentieva Z10_html</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 40px;
+      line-height: 1.7;
+      color: #222;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    ol {
+      margin-left: 30px;
+    }
+    b {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>1. Budowa selektora CSS</h1>
+
+  <p>Selektor CSS składa się z dwóch głównych części:</p>
+  <ol>
+    <li><b>Selektor (nazwa)</b> – określa, który element HTML ma zostać ostylowany. Na przykład <b>p</b> oznacza wszystkie akapity, <b>.klasa</b> – elementy z daną klasą, <b>#id</b> – element o konkretnym identyfikatorze.</li>
+    <li><b>Blok deklaracji</b> – zawiera zestaw właściwości i wartości, które mają być zastosowane do wskazanego elementu. Blok ten jest otoczony nawiasami klamrowymi <b>{ }</b>.</li>
+  </ol>
+
+  <p><b>Znaczenie nawiasów klamrowych { }</b><br>
+  Nawiasy klamrowe otwierają i zamykają blok deklaracji. Wszystko, co znajduje się wewnątrz nich, to reguły stylu przypisane do danego selektora.</p>
+
+  <p><b>Cechy selektora</b><br>
+  Selektor wskazuje element lub grupę elementów na stronie. Może odwoływać się do tagu HTML, klasy, identyfikatora, atrybutu lub stanu elementu (pseudoklasa). Jeden selektor może obejmować wiele elementów jednocześnie.</p>
+
+  <p><b>Wartości</b><br>
+  Wartość to konkretne ustawienie przypisane do właściwości CSS. Na przykład dla właściwości <b>color</b> wartością może być <b>red</b>, <b>#ff0000</b> lub <b>rgb(255,0,0)</b>. Wartość zawsze występuje po dwukropku i przed średnikiem.</p>
+
+  <p><b>Kiedy stosujemy średnik (;), kiedy nie jest konieczny</b><br>
+  Średnik oddziela kolejne deklaracje wewnątrz bloku. Po każdej deklaracji (oprócz ostatniej) średnik jest <b>obowiązkowy</b>. Po ostatniej deklaracji w bloku średnik <b>nie jest konieczny</b>, jednak dobrą praktyką jest jego stosowanie zawsze – ułatwia to dodawanie kolejnych właściwości i zapobiega błędom.</p>
+
+</body>
+</html>
+<!-- Avksentieva Z10_html -->

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Avksentieva Z11_html</title>
+  <style>
+
+    /* 1. Selektor elementu */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #1a3a5c;
+    }
+
+    /* 2. Selektor klasy */
+    .kontener {
+      width: calc(100% - 40px);
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .box {
+      /* Zagnieżdżone wyliczenia - poziom 1 */
+      width: calc(100% - 2rem);
+      /* Zagnieżdżone wyliczenia - poziom 2 */
+      padding: calc(calc(100% / 20) - 4px);
+      /* Zagnieżdżone wyliczenia - poziom 3 */
+      font-size: calc(calc(0.5rem + 1vw) - calc(0.1rem));
+      background: #eef3f8;
+      border: 2px solid #1a3a5c;
+      margin-top: 16px;
+    }
+
+    /* 3. Selektor ID */
+    #naglowek {
+      background: #1a3a5c;
+      color: white;
+      padding: 10px;
+    }
+
+    /* 4. Selektor potomka */
+    .kontener p {
+      line-height: 1.6;
+    }
+
+    /* 5. Selektor dziecka */
+    ul > li {
+      margin: 5px 0;
+    }
+
+    /* 6. Selektor atrybutu */
+    a[href] {
+      color: #e07b39;
+    }
+
+    /* 7. Selektor pseudoklasy */
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* 8. Selektor pseudoelementu */
+    h2::before {
+      content: "▸ ";
+      color: #e07b39;
+    }
+
+    /* 9. Selektor uniwersalny */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 10. Selektor grupowania */
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="naglowek">
+    <h1>Rodzaje selektorów CSS</h1>
+  </div>
+
+  <div class="kontener">
+
+    <h2>Selektory CSS</h2>
+    <ul>
+      <li><b>Elementu</b> – <code>p { }</code></li>
+      <li><b>Klasy</b> – <code>.klasa { }</code></li>
+      <li><b>ID</b> – <code>#id { }</code></li>
+      <li><b>Uniwersalny</b> – <code>* { }</code></li>
+      <li><b>Potomka</b> – <code>div p { }</code></li>
+      <li><b>Dziecka</b> – <code>div &gt; p { }</code></li>
+      <li><b>Atrybutu</b> – <code>a[href] { }</code></li>
+      <li><b>Pseudoklasy</b> – <code>a:hover { }</code></li>
+      <li><b>Pseudoelementu</b> – <code>p::before { }</code></li>
+      <li><b>Grupowania</b> – <code>h1, h2 { }</code></li>
+    </ul>
+
+    <h2>Zagnieżdżone wyliczenia (3 poziomy)</h2>
+    <div class="box">
+      width:     calc(100% - 2rem)<br>
+      padding:   calc( calc(100% / 20) - 4px )<br>
+      font-size: calc( calc(0.5rem + 1vw) - calc(0.1rem) )
+    </div>
+
+    <p><a href="https://developer.mozilla.org/pl/docs/Web/CSS/CSS_selectors">Kliknij aby przeczytać o rodzajach selektorów</a></p>
+
+  </div>
+
+</body>
+</html>
+<!-- Avksentieva Z11_html -->

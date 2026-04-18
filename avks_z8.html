@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Avksentieva Z8_html</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Zadanie 8. Wewnętrzny arkusz stylów</h1>
+
+<ol>
+  <li>
+    <h2>Gdzie jest wstawiany wewnętrzny arkusz stylów?</h2>
+    <p>
+      Wewnętrzny arkusz stylów wstawiany jest w sekcji <code>&lt;head&gt;</code> dokumentu HTML,
+      wewnątrz znacznika <code>&lt;style&gt;</code>.
+      Dotyczy tylko tej strony, w której został umieszczony.
+    </p>
+  </li>
+
+  <li>
+    <h2>Składnia teoretyczna wewnętrznego arkusza stylów</h2>
+    <p>Ogólna składnia:</p>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tr>
+        <td>
+          <code>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;selektor&nbsp;{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cecha:&nbsp;wartość;<br>
+            &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+          </code>
+        </td>
+      </tr>
+    </table>
+  </li>
+
+  <li>
+    <h2>Jakie mogą być selektory?</h2>
+    <p>
+      Selektorem może być nazwa znacznika HTML (np. <code>p</code>, <code>h1</code>, <code>body</code>),
+      klasa (np. <code>.nazwa-klasy</code>), identyfikator (np. <code>#nazwa-id</code>),
+      a także pseudoklasy (np. <code>a:hover</code>) i kombinacje powyższych.
+    </p>
+  </li>
+
+  <li>
+    <h2>Jakie mogą być cechy i wartości?</h2>
+    <p>
+      Jako <strong>cechę</strong> wpisujemy nazwę właściwości CSS, np.
+      <code>color</code>, <code>font-size</code>, <code>background-color</code>, <code>margin</code>.
+      Jako <strong>wartość</strong> wpisujemy konkretne ustawienie danej cechy, np.
+      <code>red</code>, <code>16px</code>, <code>bold</code>, <code>Arial</code>.
+      Cecha i wartość oddzielone są dwukropkiem, a deklaracje kończą się średnikiem.
+    </p>
+  </li>
+</ol>
+
+</body>
+</html>
+<!-- Avksentieva Z8_html -->
