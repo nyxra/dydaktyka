@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Avksentieva Z16_html</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; font-size: 16px; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.4em; margin-top: 28px; }
+    ol { margin-left: 30px; }
+    li { margin: 5px 0; }
+    code {
+      background: #eef3f8;
+      border-radius: 3px;
+      padding: 1px 5px;
+      font-family: 'Courier New', monospace;
+    }
+    .ramka {
+      border: 2px solid #1a3a5c;
+      padding: 10px 16px;
+      margin: 10px 0;
+      background: #f7f9fc;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>1. Selektor DIV oraz SPAN</h1>
+
+<h2>1. Opis znacznika DIV</h2>
+<p><b>Jaki to element:</b> DIV (ang. <i>division</i>) jest <b>elementem blokowym</b>. Zajmuje całą dostępną szerokość i zaczyna się od nowej linii.</p>
+<p><b>Składnia:</b></p>
+<div class="ramka">&lt;div align="wartość"&gt; treść &lt;/div&gt;</div>
+<p><b>Zastosowanie:</b> Służy do grupowania i organizowania bloków treści na stronie. Umożliwia wspólne formatowanie wielu elementów za pomocą CSS lub JavaScript.</p>
+<p><b>Opis teoretyczny:</b> Znacznik &lt;div&gt; sam w sobie nie ma wizualnego znaczenia — staje się użyteczny dopiero w połączeniu z CSS (np. nadanie tła, marginesów, pozycjonowania). Pozwala tworzyć układy kolumnowe, ramki, sekcje strony.</p>
+<p><b>Atrybuty:</b> <code>id</code>, <code>class</code>, <code>style</code>, <code>align</code>, <code>title</code>, <code>lang</code>, <code>dir</code>.</p>
+<p><b>Opis atrybutu ALIGN:</b> Atrybut <code>align</code> określa poziome wyrównanie zawartości bloku DIV. Możliwe wartości to: <code>left</code> (do lewej), <code>right</code> (do prawej), <code>center</code> (do środka), <code>justify</code> (do obu krawędzi). Atrybut ten jest przestarzały — zaleca się stosowanie CSS (<code>text-align</code>).</p>
+
+<h2>2. Opis znacznika SPAN</h2>
+<p><b>Jaki to element:</b> SPAN jest <b>elementem liniowym (inline)</b>. Nie powoduje przejścia do nowej linii i zajmuje tylko tyle miejsca, ile potrzebuje jego zawartość.</p>
+<p><b>Składnia:</b></p>
+<div class="ramka">&lt;span&gt; treść &lt;/span&gt;</div>
+<p><b>Zastosowanie:</b> Służy do wyróżniania lub formatowania fragmentów tekstu wewnątrz innych elementów (np. akapitu). Używany głównie razem z CSS do nadawania stylów konkretnym fragmentom zdania.</p>
+<p><b>Opis teoretyczny:</b> Sam w sobie nie zmienia wyglądu treści. Staje się przydatny dopiero w połączeniu z atrybutem <code>style</code>, klasą CSS lub identyfikatorem. Pozwala np. zmienić kolor jednego słowa w zdaniu bez wpływu na resztę tekstu.</p>
+
+<h2>3. Różnica między DIV a SPAN</h2>
+<p><b>DIV</b> jest elementem <b>blokowym</b> — zawsze zaczyna się od nowej linii, zajmuje całą szerokość. Służy do grupowania dużych sekcji strony.</p>
+<p><b>SPAN</b> jest elementem <b>liniowym</b> — nie przerywa przepływu tekstu, zajmuje tylko miejsce swojej zawartości. Służy do formatowania fragmentów tekstu w linii.</p>
+
+<h2>4. Elementy liniowe, blokowe i blokowo-liniowe</h2>
+<ol>
+  <li><b>Elementy liniowe (inline):</b> Nie zaczynają się od nowej linii, zajmują tylko tyle miejsca ile potrzebują. Przykłady: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>.</li>
+  <li><b>Elementy blokowe (block):</b> Zawsze zaczynają się od nowej linii i zajmują pełną dostępną szerokość kontenera. Przykłady: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;–&lt;h6&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;table&gt;</code>.</li>
+  <li><b>Elementy blokowo-liniowe (inline-block):</b> Zachowują się jak elementy liniowe (nie przerywają wiersza), ale można im nadawać szerokość i wysokość jak elementom blokowym. Ustawia się je przez <code>display: inline-block</code>. Przykłady: <code>&lt;img&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>.</li>
+</ol>
+
+</body>
+</html>
+<!-- Avksentieva Z16_html -->
