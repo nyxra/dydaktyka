@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 21 - Użycie ID</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: lightgray;
+        }
+
+        p{
+            color: green;
+            font-size: 14pt;
+        }
+
+        p#pochyly{
+            font-style: italic;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Zadanie 21 - Użycie ID</h1>
+
+<table>
+    <tr>
+        <th>Pojęcie</th>
+        <th>Znaczenie pojęcia</th>
+    </tr>
+
+    <tr>
+        <td>Co znaczy skrót ID?</td>
+        <td>
+            ID (Identifier) oznacza identyfikator elementu HTML.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jaki jest cel stosowania ID?</td>
+        <td>
+            ID służy do wyróżnienia i formatowania konkretnego elementu strony.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jakie jest znaczenie znaku # ?</td>
+        <td>
+            Znak # występuje przed nazwą identyfikatora podczas definiowania go w CSS.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Jak następuje wywołanie ID (wraz z wytłumaczeniem)?</td>
+        <td>
+            W CSS:
+            <br><br>
+            p#pochyly {
+            font-style: italic;
+            }
+            <br><br>
+            W HTML:
+            <br><br>
+            &lt;p id="pochyly"&gt;Tekst&lt;/p&gt;
+            <br><br>
+            id="pochyly" wywołuje identyfikator zdefiniowany wcześniej w arkuszu CSS.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Uwagi na temat stosowania ID</td>
+        <td>
+            <ol>
+                <li>Identyfikator może wystąpić tylko raz na stronie.</li>
+                <li>Element oznaczony ID powinien być unikalny.</li>
+                <li>Jeżeli element ma pojawiać się wielokrotnie, lepiej użyć class.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<h2>Przykład użycia ID</h2>
+
+<p>Blok tekstu o kolorze zielonym i czcionce 14pt</p>
+
+<p id="pochyly">
+    Blok tekstu o kolorze zielonym i czcionce 20pt oraz kursywie
+</p>
+
+<p>Blok tekstu o kolorze zielonym i czcionce 14pt</p>
+
+</body>
+</html>
+
+<!-- Avksentieva Veronika -->
