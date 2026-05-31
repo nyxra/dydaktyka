@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+  <title>Avksentieva Z18_html</title>
+</head>
+<body>
+
+<!-- Obliczenia numeru układu:
+     Numer_układu = (numer_w_dzienniku reszta z dzielenia przez 6) + 1
+     Numer_układu = (1 % 6) + 1 = 1 + 1 = 2
+     Wybrany układ: 2
+-->
+
+<!-- === BLOK 1 (Układ 2, Blok1) ===
+     tło: fuchsia (#FF00FF, nr 8)
+     szerokość: 980 + 1 + 200 = 1181px  (1180 + numer_w_dzienniku)
+     kolor 1. zdania: blue (#0000FF, nr 14)
+     kolor wyliczenia: gray (#808080, nr 3)
+     1. wiersz: 1.7cm, 2. wiersz: 1.3cm, wyliczenie: 8mm, znak: koło
+-->
+<div style="background-color: #FF00FF; width: 1181px; color: #FF0000; font-size: 1cm; font-family: Arial;">
+
+  <span style="color: #0000FF; font-size: 1.7cm; font-family: Arial;">
+    Znacznik DIV (blok 1) --> Avksentieva Veronika
+  </span>
+  <br />
+  <span style="font-size: 1.3cm; font-family: Times New Roman;">
+    <b><u>Element blokowy (DIV)</u></b> jest elementem blokowym, może zawierać wewnątrz siebie
+    zwykły tekst, jak również inne elementy blokowe. Został on pomyślany do tworzenia obszerniejszych struktur.
+  </span>
+  <span style="font-family: Courier New; font-size: 8mm;">
+    <br />Zastosowanie DIV
+    <ul type="circle">
+      <li style="color: #808080;">Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki
+        w układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka.</li>
+      <li style="color: #808080;">Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za pomocą arkusza stylów CSS.</li>
+    </ul>
+  </span>
+
+</div>
+<!-- koniec bloku DIV 1 -->
+
+<!-- === BLOK 3 (Układ 2, Blok3) ===
+     tło: yellow (#FFFF00, nr 12)
+     szerokość: 1081px  (1080 + numer_w_dzienniku)
+     kolor 1. zdania: maroon (#800000, nr 5)
+     kolor wyliczenia: blue (#0000FF, nr 14)
+     1. wiersz: 11mm, wyliczenie: 7mm, znak: kwadrat
+-->
+<div style="background-color: #FFFF00; width: 1081px; color: #FF0000; font-size: 1cm; font-family: Arial;">
+
+  <span style="color: #800000; font-size: 11mm; font-family: Arial;">
+    Znacznik SPAN (blok 3) --> Avksentieva Veronika
+  </span>
+  <br />
+  <span style="font-family: Georgia; font-size: 7mm;">
+    <br />Zastosowanie SPAN
+    <ul type="square">
+      <li style="color: #0000FF;">SPAN wyodrębnia elementy liniowe, najczęściej fragmenty tekstu wewnątrz akapitu.</li>
+      <li style="color: #0000FF;">Jeśli chcemy wyróżnić część tekstu kolorem wewnątrz &lt;p&gt;, używamy &lt;span&gt;, nie &lt;div&gt;.</li>
+    </ul>
+  </span>
+
+</div>
+<!-- koniec bloku DIV 3 -->
+
+<!-- === BLOK 2 (Układ 2, Blok2) ===
+     tło: red (#FF0000, nr 6)
+     szerokość: 981px  (980 + numer_w_dzienniku)
+     kolor 1. zdania: teal (#008080, nr 15)
+     kolor wyliczenia: green (#008000, nr 9)
+     1. wiersz: 1.4cm, wyliczenie: 9mm, znak: okrąg
+-->
+<div style="background-color: #FF0000; width: 981px; color: #FF0000; font-size: 1cm; font-family: Arial;">
+
+  <span style="color: #008080; font-size: 1.4cm; font-family: Arial;">
+    Różnica DIV i SPAN (blok 2) --> Avksentieva Veronika
+  </span>
+  <span style="font-family: Verdana; font-size: 9mm;">
+    <br />Różnice między DIV a SPAN
+    <ul type="disc">
+      <li style="color: #008000;">DIV jest elementem blokowym – zajmuje całą szerokość i zaczyna się od nowej linii.</li>
+      <li style="color: #008000;">SPAN jest elementem liniowym – wyświetla się obok innych elementów w tej samej linii.</li>
+    </ul>
+  </span>
+
+</div>
+<!-- koniec bloku DIV 2 -->
+
+</body>
+</html>
+<!-- Avksentieva Z18_html -->

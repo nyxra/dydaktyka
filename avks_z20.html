@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>zadanie20_avks</title>
+<style>
+
+.blok1 {
+background-color: #FFFDD0;
+width: 100%;
+heigth: 40%;
+}
+
+.blok2 p {
+color: orange;
+font-size: 20pt; 
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.blok2 { 
+background-color: magenta;
+width: 80%;
+height: 15%;
+}
+
+.blok2 i {
+color: green;
+font-size: 20pt;
+font-weight: bold;
+}
+
+.blok2 strike {
+color: red;
+font-size: 20pt;
+}
+
+.blok2 u {
+color: purple;
+font-size: 20pt;
+text-decoration: overline;
+} 
+
+.blok3 {
+background-color: #00FF7F;
+widht: 100%;
+heiht: 30%;
+}
+
+.blok3 h1 {
+color: blue;
+font-size: 30pt;
+ext-decoration: underline;
+} 
+
+.blok3 ol.poziom1 {
+color: blue;
+font-size: 25pt;
+} 
+
+.blok3 ol.poziom2 {
+color: red;
+font-size: 20pt;
+}
+
+.blok3 ol.poziom3 {
+color: gray;
+font-size: 15pt;
+} 
+</style>
+</head>
+<body>
+
+<div class="blok1">
+<p>
+	Avksentieva Veronika &ndash;
+	CSS to język służacy do opisu wygladu dokumentow HTML.
+	Pozwala oddzielic warstwe prezentacji od struktury dokumentu, 
+	dzieki czemu jeden plik CSS moze sterowwac wysglad wielu stron jednoczesnie.
+	Style mozna definoiwac jako liniowe, wewnetrzne lub zewnetrzne.
+</p>
+</div>
+
+<div class="blok2">
+<p>
+Avksentieva Veronika &ndash;
+<i>Kursywa: HTML to podstawowy język stron internetowych</i>
+<strike> Przekreśleniem: Starsz wercje HTMl wymagały osobnych tagow do kazdego formatowania.</strike>
+<u>Podkreslenie z nadkresleniem: Dzis stosujemy CSS do kontroli calego wygladu dokumentu.</u>
+</p>
+</div>
+
+<div class="blok3">
+<h1>Avksentieva Veronika &bdash; Rodzaje stylów CSS</h1>
+<p style="color: blue; font-size: 20pt; font-family: Arial;">
+CSS mozna podzielic na tzy typy ze wzgledu na miejsce definicji:
+</p>
+<ol class="poziom1">
+<li>Styl liniowy(inline)
+<ol class="poziom2">
+<li>Definiowany w atrybucje style="" znacznika HTML
+<ol class="poziom3">
+<li>Najwyzszy priorytet, trudny w utrzymaniu</li>
+<li>Przyklad: &lt; p style="color: red;" &gt; </li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Styl wewnetrzny(internal)
+<ol class="poziom2">
+<li>Definiowany w sekcji %i=lt; head&gt; w znaczniku &lt; style&gt;
+<ol class="poziom3">
+<li>Dziala tylko dla jednej strony HTML</li>
+<li>Przyklad: &lt:style&gt; p { color: red; } &lt;/style&gt;</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Styl zewnetrzny(external)
+<ol class="poziom2">
+<li>Definiowany w osobnym pliku .css, dolaczenym przez &lt;link&ht;
+<ol class="poziom3">
+<li>Najlepsza praktyka - jeden plik CSS dla wielu stron</li>
+<li>Przyklad: &lt;link rel="stylesheet" href="styl.css"&ht;</li>
+</ol>
+</li>
+</ol>
+</li>
+</body>
+</html>
