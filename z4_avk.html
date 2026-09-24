@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 4 - Avksentieva klasa 3F</title>
+  <script language="JavaScript">
+    function okno_zamknij_avksentieva()
+      {
+        window.close()
+      }
+  </script>
+</head>
+<body>
+<h2>Zadanie 4 - teoria JavaScript (Veronika Avksentieva, klasa 3F)</h2>
+
+<b>1) Kiedy powstał JavaScript (podaj datę).</b><br>
+JavaScript powstał w 1995 roku. W grudniu 1995 roku został zaimplementowany w przeglądarce Netscape Navigator.<br><br>
+
+<b>2) Dlaczego jest to język skryptowy?</b><br>
+Ponieważ jest językiem interpretowanym - nie trzeba go kompilować do kodu maszynowego, aby zobaczyć efekty działania. Wystarczy przeglądarka internetowa, która obsługuje ten język.<br><br>
+
+<b>3) Gdzie jest wykonywany JS (klient lub serwer)?</b><br>
+Po stronie klienta - w przeglądarce internetowej użytkownika. (Dzięki Node.js można go też uruchamiać na serwerze.)<br><br>
+
+<b>4) Dlaczego JS jest bezpiecznym narzędziem?</b><br>
+Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, na którym przeglądana jest strona.<br><br>
+
+<b>5) Czy jest to język obiektowy, jeśli tak to dlaczego?</b><br>
+Tak. JavaScript wykorzystuje definicje obiektów, metod i zdarzeń, które opisują właściwości obiektów. Struktura obiektów jest określona przez DOM (Document Object Model). Można korzystać z gotowych obiektów i metod, tworzyć własne oraz modyfikować istniejące.<br><br>
+
+<b>6) Wymień zalety JS:</b><br>
+Zaleta1: prostota - język jest relatywnie łatwy do opanowania, można zacząć go używać po kilku minutach nauki.<br>
+Zaleta2: jest najbardziej rozpowszechnionym językiem skryptowym, w Internecie są miliony praktycznych przykładów.<br>
+Zaleta3: uniwersalność oraz odciążenie serwerów i ograniczenie ilości zbędnych danych przesyłanych między serwerem a przeglądarką.<br><br>
+
+<b>7) Framework to:</b><br>
+Rodzaj programu do tworzenia innych programów w JS, np. Angular (Google) lub React (Facebook).<br><br>
+
+<b>8) Do aplikacji mobilnych można użyć Framework:</b><br>
+React Native - pozwala budować aplikacje mobilne na różne systemy operacyjne (cross-platform apps).<br><br>
+
+<b>9) Aplikacje responsywne to:</b><br>
+Aplikacje, które dopasowują wygląd do rozmiaru ekranu. JavaScript pobiera bieżący rozmiar ekranu, a na tej podstawie (razem z CSS i HTML) treści są zmniejszane, powiększane, ukrywane lub przenoszone, aby dobrze wyglądały na dowolnym ekranie.<br><br>
+
+<b>10) Linia kodu i wytłumaczenie:</b><br>
+&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br>
+Tworzy przycisk (type="button") o nazwie "przycisk" z napisem "Nowa Strona" (value). Kliknięcie przycisku myszką (zdarzenie onclick) uruchamia funkcję WinOpen(), która otwiera nowe okno.<br><br>
+
+<b>11) Linia kodu i wytłumaczenie:</b><br>
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+Metoda window.open otwiera nowe okno przeglądarki i wczytuje do niego plik obraz.html. "okienko" to nazwa nowego okna, a trzeci parametr to lista ustawień okna:<br>
+toolbar=no - ukrywa pasek narzędzi (przyciski nawigacji)<br>
+directories=no - ukrywa pasek katalogów (zakładek/linków)<br>
+menubar=no - ukrywa pasek menu<br>
+height=280 - wysokość okna 280 pikseli<br>
+width=160 - szerokość okna 160 pikseli<br>
+top=200 - okno jest 200 pikseli od górnej krawędzi ekranu<br>
+left=200 - okno jest 200 pikseli od lewej krawędzi ekranu<br><br>
+
+<b>12) Opisz instrukcję window.close()</b><br>
+Metoda window.close() zamyka bieżące okno przeglądarki (działa dla okien otwartych przez skrypt metodą window.open).<br><br>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
+</body>
+</html>
+<!-- Veronika Avksentieva 3F gr.1 - zadanie 4 -->
