@@ -3,13 +3,25 @@
             <meta charset="utf-8">
             <title>Avksentieva Veronika</title> 
           <script language="JavaScript"> 
-             function WinOpen_z3()  
+function WinOpen_z1()  
+               { 
+window.open("z1_avks.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=250,width=400,top=200,left=100"); 
+               } 
+function WinOpen_z2()  
+               { 
+window.open("zadanie2_avks.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=320,width=750,top=200,left=150"); 
+               } 
+function WinOpen_z3()  
                { 
 window.open("zadanie3_avk.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200"); 
                } 
 function WinOpen_z4()  
                { 
 window.open("z4_avk.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=700,width=800,top=100,left=400"); 
+               } 
+function WinOpen_z5()  
+               { 
+window.open("zadanie5_avk.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=260,width=700,top=60,left=300"); 
                } 
 function okno_zamknij_avksentieva()  
                        { 
@@ -18,10 +30,13 @@ function okno_zamknij_avksentieva()
           </script> 
       </head> 
 <body> 
-   <p style="color:red; font-size:2cm; font-family:'Times New Roman', serif; font-weight:bold; margin:0;">Szkielet zaliczeniowy JavaScript Veronika Avksentieva klasa 3F</p>
+   <p style="color:red; font-size:2cm; font-family:'Times New Roman', serif; font-weight:bold; margin:0;">Szkielet zaliczeniowy JavaScript, wykonała: Veronika Avksentieva klasa 3F</p>
    <form> 
+        <input type="button" name="zadanie1" value="zadanie1-Avksentieva" onclick="WinOpen_z1(' ')"> 
+        <input type="button" name="zadanie2" value="zadanie2-Avksentieva" onclick="WinOpen_z2(' ')"> 
         <input type="button" name="zadanie3" value="zadanie3-Avksentieva" onclick="WinOpen_z3(' ')"> 
         <input type="button" name="zadanie4" value="zadanie4-Avksentieva" onclick="WinOpen_z4(' ')"> 
+        <input type="button" name="zadanie5" value="zadanie5-Avksentieva" onclick="WinOpen_z5(' ')"> 
         <input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/> 
     </form> 
 </body> 
