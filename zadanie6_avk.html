@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+ <meta charset="utf-8">
+ <title>Zadanie 6 - Avksentieva 3f</title>
+ <script language="JavaScript">
+// Veronika Avksentieva 3f gr.1
+// Zadanie 6 - teoria
+function okno_zamknij_avksentieva()
+ {
+   window.close()
+ }
+ </script>
+</head>
+<body>
+<h2>Zadanie 6 – zadanie teoretyczne (Veronika Avksentieva 3f)</h2>
+<b>1) Rodzaje okienek</b><br>
+<u>Okienko alert</u> – wyświetla okienko dialogowe z <b>informacją</b> i przyciskiem OK.<br><u>Okienko prompt</u> – generuje okno, w którym użytkownik może <b>wpisać wartość</b>, zwracaną następnie do programu.<br><u>Okienko confirm</u> – służy do tego, aby użytkownik coś <b>potwierdził</b> (OK lub Anuluj).<br><br>
+<b>2) Konwersja liczb</b><br>
+Wczytanie zmiennej przy użyciu <b>prompt</b> daje <u>ciąg znaków</u>, dlatego aby wykonywać obliczenia, trzeba zamienić tekst na liczbę:<br><b>parseFloat(zmienna)</b> – konwersja zmiennej do typu <u>float</u> (liczba zmiennoprzecinkowa),<br><b>parseInt(zmienna)</b> – konwersja zmiennej do typu <u>int</u> (liczba całkowita),<br><b>toString(zmienna)</b> – konwersja zmiennej do typu <u>łańcuchowego</u> (tekst).<br><br>
+<b>3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad (trzy zasady)</b><br>
+1. Nazwa zmiennej musi się <u>zaczynać od litery, znaku "$" lub "_"</u>, może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".<br>&nbsp;&nbsp;&nbsp;Poprawne: zmienna1, $wynik, _rozmiar &nbsp; Błędne: 1zmienna, wynik gry, wysokość<br>2. <u>Wielkość liter ma znaczenie</u> – <b>Rekord</b> i <b>rekord</b> to dwie różne zmienne.<br>3. <u>Nie należy używać słów kluczowych</u> JavaScript jako nazw zmiennych.<br><br>
+<b>4) Omów typy zmiennych w Javascript</b><br>
+W JavaScript typy zmiennych <u>nie są deklarowane</u> jak w C++ – typ jest określany w chwili przypisania wartości.<br><b>Number</b> – typ liczbowy (liczby całkowite i zmiennoprzecinkowe),<br><b>String</b> – typ tekstowy,<br><b>Boolean</b> – typ logiczny (true / false),<br><b>Null</b> – pusta zawartość,<br><b>Undefined</b> – typ niezdefiniowany (zmienna bez wartości),<br><b>Object</b> – obiekt.<br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
+</body>
+</html>

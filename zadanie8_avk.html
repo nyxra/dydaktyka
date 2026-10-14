@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+ <head>
+  <meta charset="utf-8">
+  <title>Zadanie 8 - Avksentieva 3f</title>
+  <script type="text/javascript">
+// Veronika Avksentieva 3f gr.1
+// Zadanie 8 - Confirm Box
+function show_confirm()
+   {
+     var r=confirm("Naciśnij klawisz");
+      if (r==true)
+          { document.write("Nacisnąłeś OK!"); }
+      else
+        { document.write("Nacisnąłeś Cancel!"); }
+   }
+function okno_zamknij_avksentieva()
+ {
+   window.close()
+ }
+  </script>
+ </head>
+<body>
+ <h2>Zadanie 8 – Confirm Box</h2>
+ <p><b>Zastosowanie:</b><br>Jest używany, jeśli chcemy zapytać użytkownika o weryfikację lub akceptację jakichś danych. Użytkownik musi nacisnąć „OK” w celu akceptacji bądź „Anuluj” (Cancel) w celu odrzucenia. Jeżeli zostanie wybrane „OK”, metoda zwraca true, w przeciwnym wypadku false.</p>
+ <input type="button" onclick="show_confirm()" value="Pokaż confirm box" />
+ <br><br><input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
+</body>
+</html>
