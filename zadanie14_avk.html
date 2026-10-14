@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+ <head>
+  <meta charset="utf-8">
+  <title>Zadanie 14 - Avksentieva 3f</title>
+ </head>
+<body>
+ <div id="wynik_avk">
+  <script language="JavaScript">
+// Veronika Avksentieva 3f gr.1  14.10.2026
+// Zadanie 14
+   // krok 1: 1/m = 1/(m+1) + 1/(m*(m+1))
+   // krok 2: pierwszy ułamek 1/(m+1) rozkładamy tym samym wzorem:
+   //         1/(m+1) = 1/(m+2) + 1/((m+1)*(m+2))
+   var m_avk=prompt("Podaj m (liczba naturalna > 0) m=","");
+   var m=parseInt(m_avk);
+   var mian1_avk=m+2;
+   var mian2_avk=(m+1)*(m+2);
+   var mian3_avk=m*(m+1);
+   document.write("<div style='color:blue;font-size:40px;'>");
+   document.write("Rozkład ułamka egipskiego na trzy ułamki egipskie<br>");
+   document.write("m="+m+"<br><br>");
+   document.write("1/"+m+"=1/"+mian1_avk+" + 1/"+mian2_avk+" + 1/"+mian3_avk);
+   document.write("</div>");
+   function okno_zamknij_avksentieva()
+    {
+      window.close()
+    }
+  </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
+</body>
+</html>

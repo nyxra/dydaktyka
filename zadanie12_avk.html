@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+ <head>
+  <meta charset="utf-8">
+  <title>Zadanie 12 - Avksentieva 3f</title>
+ </head>
+<body>
+ <div id="wynik_avk">
+  <script language="JavaScript">
+// Veronika Avksentieva 3f gr.1  14.10.2026
+// Zadanie 12
+   var dzien_ur_avk=17;                 // dzień urodzenia
+   var rozmiar_avk=30+dzien_ur_avk;          // wielkość znaków = 30 + dzień urodzenia
+   var D1_avk=prompt("D1 (dzień stycznia) =","");
+   var G1_avk=prompt("G1 (godzina) =","");
+   var D2_avk=prompt("D2 (dzień stycznia) =","");
+   var G2_avk=prompt("G2 (godzina) =","");
+   var d1=parseInt(D1_avk);
+   var g1=parseInt(G1_avk);
+   var d2=parseInt(D2_avk);
+   var g2=parseInt(G2_avk);
+   var godzin_avk=(d1-d2)*24+(g1-g2);       // różnica w godzinach
+   var sekund_avk=godzin_avk*60*60;          // zamiana godzin na sekundy
+   document.write("<div style='color:green;font-size:"+rozmiar_avk+"px;'>");
+   document.write("D1="+d1+"<br>");
+   document.write("G1="+g1+"<br>");
+   document.write("D2="+d2+"<br>");
+   document.write("G2="+g2+"<br>");
+   document.write("ilość sekund= "+sekund_avk+" sekund");
+   document.write("</div>");
+   function okno_zamknij_avksentieva()
+    {
+      window.close()
+    }
+  </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
+</body>
+</html>
