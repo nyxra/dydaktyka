@@ -1,40 +1,22 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
- <head>
-  <meta charset="utf-8">
-  <title>Zadanie 16 - Avksentieva 3f</title>
- </head>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 16 - Sterowanie wydrukami</title>
+</head>
 <body>
- <div id="wynik_avk">
-  <script language="JavaScript">
-// Veronika Avksentieva 3f gr.1  14.10.2026
-// Zadanie 16
-   // wzór: (A+B)^3 = A^3 + 3*A^2*B + 3*A*B^2 + B^3
-   var A_avk=prompt("Podaj pierwszą liczbę     A=","");
-   var B_avk=prompt("Podaj drugą liczbę        B=","");
-   var A=parseInt(A_avk);
-   var B=parseInt(B_avk);
-   var s1=A*A*A;          // A^3
-   var s2=3*A*A*B;        // 3*A^2*B
-   var s3=3*A*B*B;        // 3*A*B^2
-   var s4=B*B*B;          // B^3
-   var wynik_avk=s1+s2+s3+s4;
-   document.write("<div style='color:navy;white-space:nowrap;'>");
-   document.write("<span>wczytane liczby: &nbsp; A="+A+" &nbsp; B="+B+"</span><br>");
-   document.write("<span id='linia2_avk'>("+A+" + "+B+")^3= "+A+"^3 + 3*(("+A+")^2)*("+B+") + 3*("+A+")*(("+B+")^2) + "+B+"^3 = "+s1+" + "+s2+" + "+s3+" + "+s4+" = "+wynik_avk+"</span>");
-   document.write("</div>");
-   // dobranie wielkości liter tak, aby druga linia zajmowała całą szerokość ekranu
-   var linia_avk=document.getElementById("linia2_avk");
-   var rozmiar_avk=10;
-   linia_avk.parentNode.style.fontSize=rozmiar_avk+"px";
-   rozmiar_avk=rozmiar_avk*(document.body.clientWidth-20)/linia_avk.offsetWidth;
-   linia_avk.parentNode.style.fontSize=Math.floor(rozmiar_avk)+"px";
-   function okno_zamknij_avksentieva()
-    {
-      window.close()
-    }
-  </script>
- </div>
- <input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
+    <div style="color:navy; font-size:30px;">
+        <script language="JavaScript">
+            var A = parseFloat(prompt("Podaj pierwszą liczbę A=", ""));
+            var B = parseFloat(prompt("Podaj drugą liczbę B=", ""));
+            var w1 = Math.pow(A, 3);
+            var w2 = 3 * Math.pow(A, 2) * B;
+            var w3 = 3 * A * Math.pow(B, 2);
+            var w4 = Math.pow(B, 3);
+            var suma = w1 + w2 + w3 + w4;
+            document.write("wczytane liczby: A=" + A + " B=" + B + "<br>");
+            document.write("(" + A + " + " + B + ")^3 = " + A + "^3 + 3*((" + A + ")^2)*(" + B + ") + 3*(" + A + ")*((" + B + ")^2) + " + B + "^3 = " + w1 + " + " + w2 + " + " + w3 + " + " + w4 + " = " + suma);
+        </script>
+    </div>
 </body>
 </html>
