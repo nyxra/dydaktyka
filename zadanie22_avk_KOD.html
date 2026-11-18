@@ -1,0 +1,14 @@
+<!doctype html><html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KOD zadania 22 - Avksentieva</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}textarea{font:13px Consolas,monospace;max-width:100%}</style></head><body><h1>KOD - zadanie 22</h1><p>Veronika Avksentieva 3F gr. 1</p><textarea cols="110" rows="36" readonly>&lt;!doctype html&gt;
+&lt;html lang=&quot;pl-PL&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+&lt;title&gt;Zadanie 22 - Avksentieva 3F&lt;/title&gt;&lt;style&gt;body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Zadanie 22: Prostokąt: pole i obwód&lt;/h1&gt;&lt;p&gt;Veronika Avksentieva 3F gr. 1&lt;/p&gt;
+&lt;p&gt;Wpisz długości boków a i b.&lt;/p&gt;&lt;form id=&quot;formularz&quot;&gt;&lt;label&gt;a&lt;input id=&quot;a&quot; type=&quot;number&quot; step=&quot;any&quot; value=&quot;4&quot;&gt;&lt;/label&gt; &lt;label&gt;b&lt;input id=&quot;b&quot; type=&quot;number&quot; step=&quot;any&quot; value=&quot;6&quot;&gt;&lt;/label&gt;&lt;br&gt;&lt;button type=&quot;submit&quot;&gt;Oblicz&lt;/button&gt;&lt;/form&gt;&lt;div id=&quot;wynik&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+// Veronika Avksentieva 3F gr. 1 - Zadanie 22
+function Pole_avksentieva(a_avk,b_avk){return a_avk*b_avk;}
+function obwod_avksentieva(a_avk,b_avk){return 2*(a_avk+b_avk);}
+function oblicz(){var a=Number(document.getElementById(&#x27;a&#x27;).value),b=Number(document.getElementById(&#x27;b&#x27;).value);document.getElementById(&#x27;wynik&#x27;).innerHTML=&#x27;Pole = &#x27;+Pole_avksentieva(a,b).toFixed(2)+&#x27;&lt;br&gt;Obwód = &#x27;+obwod_avksentieva(a,b).toFixed(2);}
+document.getElementById(&#x27;formularz&#x27;).addEventListener(&#x27;submit&#x27;, function(e) { e.preventDefault(); oblicz(); });
+&lt;/script&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; onclick=&quot;window.close()&quot;&gt;Zamknij okno&lt;/button&gt;&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</textarea><p><button onclick="window.close()">Zamknij okno</button></p></body></html>

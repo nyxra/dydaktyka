@@ -1,0 +1,7 @@
+INSTRUKCJA - JavaScript, Veronika Avksentieva 3F, nr dziennika 1
+
+Otwórz szkielet_avk.html. Każdy przycisk uruchamia zadanie w osobnym oknie; od zadania 11 dostępne są także przyciski KOD. Zezwól przeglądarce na wyskakujące okna. Wszystkie pliki projektu i grafiki trzymaj razem w jednym folderze.
+
+Zadania 1-27 są dostępne w szkielecie. Zadanie 2 używa avksentieva_zewnetrzny.js. Zadanie 3 otwiera obraz.html i animację obraz1.gif. Zadanie 5 wykorzystuje grafika1-4_avk.html oraz grafika1-4.jpg. Zadanie 24 pobiera x1 i x2 przez prompt; wzory są zgodne z PDF. Zadanie 25: Ra-226 ma okres półtrwania 1600 lat (U.S. NRC).
+
+Przykładowe testy: 11: D1=30,D2=28 -> 172800 s; 12: 30/4 i 28/22 -> 108000 s; 13: m=4 -> 1/5+1/20; 14: m=4 -> 1/6+1/30+1/20 oraz 1/7+1/42+1/30+1/20; 15: m=3 -> 1/6+1/6; 16: A=1,B=2 -> 27; 20: A(0,0),B(3,0),C(0,4) -> boki 3,5,4; 23: D=3,X=4 -> długość 5, kąt 36.87°.

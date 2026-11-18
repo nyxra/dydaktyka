@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zadanie 19 - Avksentieva 3F</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}</style></head><body>
+<h1>Zadanie 19: Kwadrat: pole i obwód</h1><p>Veronika Avksentieva 3F gr. 1</p>
+<label>Długość boku [cm] <input id="bok" type="number" step="any" value="5"></label><button onclick="pole_avk()">Oblicz pole</button><button onclick="obwod_avk()">Oblicz obwód</button><div id="wynik"></div><script>// Veronika Avksentieva 3F - Zadanie 19
+function pole_avk(){var a=Number(document.getElementById('bok').value);document.getElementById('wynik').textContent='Pole kwadratu = '+(a*a).toFixed(2)+' cm²';}
+function obwod_avk(){var a=Number(document.getElementById('bok').value);document.getElementById('wynik').textContent='Obwód kwadratu = '+(4*a).toFixed(2)+' cm';}</script>
+<p><button type="button" onclick="window.close()">Zamknij okno</button></p>
+</body></html>

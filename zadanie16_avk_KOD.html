@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="pl-PL">
- <head>
-  <meta charset="utf-8">
-  <title>Zadanie 16 KOD - Avksentieva 3f</title>
- </head>
- <body>
-  <textarea cols="120" rows="41">
-<!DOCTYPE html>
-<html lang="pl-PL">
- <head>
-  <meta charset="utf-8">
-  <title>Zadanie 16 - Avksentieva 3f</title>
- </head>
-<body>
- <div id="wynik_avk">
-  <script language="JavaScript">
+<!doctype html><html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KOD zadania 16 - Avksentieva</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}textarea{font:13px Consolas,monospace;max-width:100%}</style></head><body><h1>KOD - zadanie 16</h1><p>Veronika Avksentieva 3F gr. 1</p><textarea cols="110" rows="36" readonly>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pl-PL&quot;&gt;
+ &lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Zadanie 16 - Avksentieva 3f&lt;/title&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+ &lt;div id=&quot;wynik_avk&quot;&gt;
+  &lt;script language=&quot;JavaScript&quot;&gt;
 // Veronika Avksentieva 3f gr.1  14.10.2026
 // Zadanie 16
    // wzór: (A+B)^3 = A^3 + 3*A^2*B + 3*A*B^2 + B^3
-   var A_avk=prompt("Podaj pierwszą liczbę     A=","");
-   var B_avk=prompt("Podaj drugą liczbę        B=","");
+   var A_avk=prompt(&quot;Podaj pierwszą liczbę     A=&quot;,&quot;&quot;);
+   var B_avk=prompt(&quot;Podaj drugą liczbę        B=&quot;,&quot;&quot;);
    var A=parseInt(A_avk);
    var B=parseInt(B_avk);
    var s1=A*A*A;          // A^3
@@ -27,27 +19,23 @@
    var s3=3*A*B*B;        // 3*A*B^2
    var s4=B*B*B;          // B^3
    var wynik_avk=s1+s2+s3+s4;
-   document.write("<div style='color:navy;white-space:nowrap;'>");
-   document.write("<span>wczytane liczby: &amp;nbsp; A="+A+" &amp;nbsp; B="+B+"</span><br>");
-   document.write("<span id='linia2_avk'>("+A+" + "+B+")^3= "+A+"^3 + 3*(("+A+")^2)*("+B+") + 3*("+A+")*(("+B+")^2) + "+B+"^3 = "+s1+" + "+s2+" + "+s3+" + "+s4+" = "+wynik_avk+"</span>");
-   document.write("</div>");
+   document.write(&quot;&lt;div style=&#x27;color:navy;white-space:nowrap;&#x27;&gt;&quot;);
+   document.write(&quot;&lt;span&gt;wczytane liczby: &amp;nbsp; A=&quot;+A+&quot; &amp;nbsp; B=&quot;+B+&quot;&lt;/span&gt;&lt;br&gt;&quot;);
+   document.write(&quot;&lt;span id=&#x27;linia2_avk&#x27;&gt;(&quot;+A+&quot; + &quot;+B+&quot;)^3= &quot;+A+&quot;^3 + 3*((&quot;+A+&quot;)^2)*(&quot;+B+&quot;) + 3*(&quot;+A+&quot;)*((&quot;+B+&quot;)^2) + &quot;+B+&quot;^3 = &quot;+s1+&quot; + &quot;+s2+&quot; + &quot;+s3+&quot; + &quot;+s4+&quot; = &quot;+wynik_avk+&quot;&lt;/span&gt;&quot;);
+   document.write(&quot;&lt;/div&gt;&quot;);
    // dobranie wielkości liter tak, aby druga linia zajmowała całą szerokość ekranu
-   var linia_avk=document.getElementById("linia2_avk");
+   var linia_avk=document.getElementById(&quot;linia2_avk&quot;);
    var rozmiar_avk=10;
-   linia_avk.parentNode.style.fontSize=rozmiar_avk+"px";
+   linia_avk.parentNode.style.fontSize=rozmiar_avk+&quot;px&quot;;
    rozmiar_avk=rozmiar_avk*(document.body.clientWidth-20)/linia_avk.offsetWidth;
-   linia_avk.parentNode.style.fontSize=Math.floor(rozmiar_avk)+"px";
+   linia_avk.parentNode.style.fontSize=Math.floor(rozmiar_avk)+&quot;px&quot;;
    function okno_zamknij_avksentieva()
     {
       window.close()
     }
-  </script>
- </div>
- <input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
-</body>
-</html>
-</textarea>
-  <br>
-  <input type="button" value="zamknij okno" onclick="window.close()"/>
- </body>
-</html>
+  &lt;/script&gt;
+ &lt;/div&gt;
+ &lt;input type=&quot;button&quot; value=&quot;zamknij okno&quot; onclick=&quot;okno_zamknij_avksentieva()&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea><p><button onclick="window.close()">Zamknij okno</button></p></body></html>

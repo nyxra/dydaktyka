@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zadanie 24 - Avksentieva 3F</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}</style></head><body>
+<h1>Zadanie 24: Obliczenia z użyciem Math</h1><p>Veronika Avksentieva 3F gr. 1</p>
+<p>x1 podaj w stopniach. Imię Veronika ma 8 liter, stąd wykładnik 8/(8+2).</p><button onclick="oblicz()">Wczytaj dane i oblicz</button><div id="wynik"></div><script>// Veronika Avksentieva - Zadanie 24
+function oblicz(){var s1=prompt("Podaj x1 w stopniach", "30");if(s1===null)return;var s2=prompt("Podaj x2", "2");if(s2===null)return;var x1=parseFloat(s1),x2=parseFloat(s2);if(!Number.isFinite(x1)||!Number.isFinite(x2)){document.getElementById('wynik').textContent='Wprowadź dwie poprawne liczby.';return;}var rad=x1*Math.PI/180;var y1=3*Math.pow(x1,8/(8+2));var y2=2*Math.cos(rad)+3*Math.sin(rad);var y3=Math.pow(Math.pow(x1,5)+2*Math.pow(x2,4)*Math.abs(x1-x2),1/3);document.getElementById('wynik').innerHTML='Wczytane liczby: x1='+x1+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2='+x2+'<br>x1 w stopniach='+x1+'°; x1 w radianach='+rad.toFixed(2)+'<br>y1 = 3 · x1^(8/10) = '+y1.toFixed(2)+'<br>y2 = 2 cos(x1) + 3 sin(x1) = '+y2.toFixed(2)+'<br>y3 = ∛(x1^5 + 2 x2^4 |x1−x2|) = '+y3.toFixed(2);}</script>
+<p><button type="button" onclick="window.close()">Zamknij okno</button></p>
+</body></html>

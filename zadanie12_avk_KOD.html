@@ -1,52 +1,40 @@
-<!DOCTYPE html>
-<html lang="pl-PL">
- <head>
-  <meta charset="utf-8">
-  <title>Zadanie 12 KOD - Avksentieva 3f</title>
- </head>
- <body>
-  <textarea cols="90" rows="40">
-<!DOCTYPE html>
-<html lang="pl-PL">
- <head>
-  <meta charset="utf-8">
-  <title>Zadanie 12 - Avksentieva 3f</title>
- </head>
-<body>
- <div id="wynik_avk">
-  <script language="JavaScript">
+<!doctype html><html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KOD zadania 12 - Avksentieva</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}textarea{font:13px Consolas,monospace;max-width:100%}</style></head><body><h1>KOD - zadanie 12</h1><p>Veronika Avksentieva 3F gr. 1</p><textarea cols="110" rows="36" readonly>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pl-PL&quot;&gt;
+ &lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Zadanie 12 - Avksentieva 3f&lt;/title&gt;
+ &lt;/head&gt;
+&lt;body&gt;
+ &lt;div id=&quot;wynik_avk&quot;&gt;
+  &lt;script language=&quot;JavaScript&quot;&gt;
 // Veronika Avksentieva 3f gr.1  14.10.2026
 // Zadanie 12
    var dzien_ur_avk=17;                 // dzień urodzenia
    var rozmiar_avk=30+dzien_ur_avk;          // wielkość znaków = 30 + dzień urodzenia
-   var D1_avk=prompt("D1 (dzień stycznia) =","");
-   var G1_avk=prompt("G1 (godzina) =","");
-   var D2_avk=prompt("D2 (dzień stycznia) =","");
-   var G2_avk=prompt("G2 (godzina) =","");
+   var D1_avk=prompt(&quot;D1 (dzień stycznia) =&quot;,&quot;&quot;);
+   var G1_avk=prompt(&quot;G1 (godzina) =&quot;,&quot;&quot;);
+   var D2_avk=prompt(&quot;D2 (dzień stycznia) =&quot;,&quot;&quot;);
+   var G2_avk=prompt(&quot;G2 (godzina) =&quot;,&quot;&quot;);
    var d1=parseInt(D1_avk);
    var g1=parseInt(G1_avk);
    var d2=parseInt(D2_avk);
    var g2=parseInt(G2_avk);
    var godzin_avk=(d1-d2)*24+(g1-g2);       // różnica w godzinach
    var sekund_avk=godzin_avk*60*60;          // zamiana godzin na sekundy
-   document.write("<div style='color:green;font-size:"+rozmiar_avk+"px;'>");
-   document.write("D1="+d1+"<br>");
-   document.write("G1="+g1+"<br>");
-   document.write("D2="+d2+"<br>");
-   document.write("G2="+g2+"<br>");
-   document.write("ilość sekund= "+sekund_avk+" sekund");
-   document.write("</div>");
+   document.write(&quot;&lt;div style=&#x27;color:green;font-size:&quot;+rozmiar_avk+&quot;px;&#x27;&gt;&quot;);
+   document.write(&quot;D1=&quot;+d1+&quot;&lt;br&gt;&quot;);
+   document.write(&quot;G1=&quot;+g1+&quot;&lt;br&gt;&quot;);
+   document.write(&quot;D2=&quot;+d2+&quot;&lt;br&gt;&quot;);
+   document.write(&quot;G2=&quot;+g2+&quot;&lt;br&gt;&quot;);
+   document.write(&quot;ilość sekund= &quot;+sekund_avk+&quot; sekund&quot;);
+   document.write(&quot;&lt;/div&gt;&quot;);
    function okno_zamknij_avksentieva()
     {
       window.close()
     }
-  </script>
- </div>
- <input type="button" value="zamknij okno" onclick="okno_zamknij_avksentieva()"/>
-</body>
-</html>
-</textarea>
-  <br>
-  <input type="button" value="zamknij okno" onclick="window.close()"/>
- </body>
-</html>
+  &lt;/script&gt;
+ &lt;/div&gt;
+ &lt;input type=&quot;button&quot; value=&quot;zamknij okno&quot; onclick=&quot;okno_zamknij_avksentieva()&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea><p><button onclick="window.close()">Zamknij okno</button></p></body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 24 - Math</title>
+</head>
+<body>
+    <div style="font-size:25px;">
+        <script language="JavaScript">
+            var x1_avk = parseFloat(prompt("Podaj x1 (w stopniach)=", ""));
+            var x2_avk = parseFloat(prompt("Podaj x2=", ""));
+
+            // Wpisz liczbę liter swojego imienia w zmiennej litery_imienia
+            var litery_imienia = 5;
+
+            var y1 = 3 * Math.pow(x1_avk, litery_imienia / (litery_imienia + 2));
+
+            var rad = (x1_avk * Math.PI) / 180;
+            var y2 = 2 * Math.cos(rad) + 3 * Math.sin(rad);
+
+            var pod_pierwiastkiem = Math.pow(x1_avk, 5) + 2 * Math.pow(x2_avk, 4) * Math.abs(x1_avk - x2_avk);
+            var y3 = Math.cbrt(pod_pierwiastkiem);
+
+            document.write("wczytane liczby: x1 = " + x1_avk + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2 = " + x2_avk + "<br>");
+            document.write("wczytane liczby:<br>");
+            document.write("w stopniach x1 = " + x1_avk + " [stopniach]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x1 = " + rad.toFixed(2) + " [radianach]<br>");
+            document.write("y1 = " + y1.toFixed(2) + "<br>");
+            document.write("y2 = " + y2.toFixed(2) + "<br>");
+            document.write("y3 = " + y3.toFixed(2) + "<br>");
+        </script>
+    </div>
+</body>
+</html>

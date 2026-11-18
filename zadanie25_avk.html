@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zadanie 25 - Avksentieva 3F</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}</style></head><body>
+<h1>Zadanie 25: Rozpad promieniotwórczy</h1><p>Veronika Avksentieva 3F gr. 1</p>
+<p>Wzory: λ = ln(2)/T½, N = N₀·e^(−λt). Węgiel-14: T½=5700 lat; rad-226: T½=1600 lat (<a href="https://www.nrc.gov/sites/default/files/documents/radium_faq102008.pdf">U.S. Nuclear Regulatory Commission</a>).</p><button onclick="oblicz()">Wczytaj dane i oblicz</button><div id="wynik"></div><script>// Veronika Avksentieva - Zadanie 25
+function oblicz(){var a=prompt('Podaj ilość początkową N0','1000');if(a===null)return;var b=prompt('Podaj czas t w latach','5700');if(b===null)return;var c=prompt('Podaj czas połowicznego rozpadu T1/2 w latach (C-14=5700, Ra-226=1600)','5700');if(c===null)return;var n0=parseFloat(a),t=parseFloat(b),half=parseFloat(c);if(!Number.isFinite(n0)||!Number.isFinite(t)||!Number.isFinite(half)||half<=0){document.getElementById('wynik').textContent='Wpisz poprawne liczby; T1/2 musi być dodatni.';return;}var lambda=Math.LN2/half,N=n0*Math.pow(Math.E,-lambda*t);document.getElementById('wynik').innerHTML='λ = '+lambda.toFixed(7)+' 1/rok<br>N = '+N.toFixed(2)+' atomów';}</script>
+<p><button type="button" onclick="window.close()">Zamknij okno</button></p>
+</body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 20 KOD</title>
+</head>
+<body>
+<textarea cols="90" rows="42">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 20 - Trójkąt</title>
+    <script type="text/javascript">
+// Avksentieva 18.11.2026
+// Zadanie 20
+        function AB_avk() {
+            var xa_avk = parseFloat(document.getElementById('xa').value);
+            var ya_avk = parseFloat(document.getElementById('ya').value);
+            var xb_avk = parseFloat(document.getElementById('xb').value);
+            var yb_avk = parseFloat(document.getElementById('yb').value);
+            var dlugosc = Math.sqrt(Math.pow(xb_avk - xa_avk, 2) + Math.pow(yb_avk - ya_avk, 2));
+            document.getElementById("wynik").innerHTML = "Długość boku AB = " + dlugosc.toFixed(2);
+        }
+        function BC_avk() {
+            var xb_avk = parseFloat(document.getElementById('xb').value);
+            var yb_avk = parseFloat(document.getElementById('yb').value);
+            var xc_avk = parseFloat(document.getElementById('xc').value);
+            var yc_avk = parseFloat(document.getElementById('yc').value);
+            var dlugosc = Math.sqrt(Math.pow(xc_avk - xb_avk, 2) + Math.pow(yc_avk - yb_avk, 2));
+            document.getElementById("wynik").innerHTML = "Długość boku BC = " + dlugosc.toFixed(2);
+        }
+        function AC_avk() {
+            var xa_avk = parseFloat(document.getElementById('xa').value);
+            var ya_avk = parseFloat(document.getElementById('ya').value);
+            var xc_avk = parseFloat(document.getElementById('xc').value);
+            var yc_avk = parseFloat(document.getElementById('yc').value);
+            var dlugosc = Math.sqrt(Math.pow(xc_avk - xa_avk, 2) + Math.pow(yc_avk - ya_avk, 2));
+            document.getElementById("wynik").innerHTML = "Długość boku AC = " + dlugosc.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h2>Obliczanie długości boków trójkąta</h2>
+    Punkt A: xa = <input type="text" id="xa" size="5"> ya = <input type="text" id="ya" size="5"><br><br>
+    Punkt B: xb = <input type="text" id="xb" size="5"> yb = <input type="text" id="yb" size="5"><br><br>
+    Punkt C: xc = <input type="text" id="xc" size="5"> yc = <input type="text" id="yc" size="5"><br><br>
+
+    <input type="button" value="Oblicz AB" onclick="AB_avk()">
+    <input type="button" value="Oblicz BC" onclick="BC_avk()">
+    <input type="button" value="Oblicz AC" onclick="AC_avk()"><br><br>
+
+    <div id="wynik" style="font-size: 30px;"></div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

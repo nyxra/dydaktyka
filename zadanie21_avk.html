@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zadanie 21 - Avksentieva 3F</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}</style></head><body>
+<h1>Zadanie 21: Walec: objętość i pole całkowite</h1><p>Veronika Avksentieva 3F gr. 1</p>
+<form id="formularz"><label>Promień r [cm] <input id="r" type="number" step="any" value="2"></label><label>Wysokość h [cm] <input id="h" type="number" step="any" value="5"></label><button>Oblicz V i Pc</button></form><div id="wynik"></div><script>// Veronika Avksentieva - Zadanie 21
+function V(r,h){return Math.PI*r*r*h;}
+function Pc(r,h){return 2*Math.PI*r*r+2*Math.PI*r*h;}
+document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();var r=Number(document.getElementById('r').value),h=Number(document.getElementById('h').value);document.getElementById('wynik').innerHTML='V = '+V(r,h).toFixed(2)+' cm³<br>Pc = '+Pc(r,h).toFixed(2)+' cm²';});</script>
+<p><button type="button" onclick="window.close()">Zamknij okno</button></p>
+</body></html>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zadanie 22 - Avksentieva 3F</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}</style></head><body>
+<h1>Zadanie 22: Prostokąt: pole i obwód</h1><p>Veronika Avksentieva 3F gr. 1</p>
+<p>Wpisz długości boków a i b.</p><form id="formularz"><label>a<input id="a" type="number" step="any" value="4"></label> <label>b<input id="b" type="number" step="any" value="6"></label><br><button type="submit">Oblicz</button></form><div id="wynik" aria-live="polite"></div>
+<script>
+// Veronika Avksentieva 3F gr. 1 - Zadanie 22
+function Pole_avksentieva(a_avk,b_avk){return a_avk*b_avk;}
+function obwod_avksentieva(a_avk,b_avk){return 2*(a_avk+b_avk);}
+function oblicz(){var a=Number(document.getElementById('a').value),b=Number(document.getElementById('b').value);document.getElementById('wynik').innerHTML='Pole = '+Pole_avksentieva(a,b).toFixed(2)+'<br>Obwód = '+obwod_avksentieva(a,b).toFixed(2);}
+document.getElementById('formularz').addEventListener('submit', function(e) { e.preventDefault(); oblicz(); });
+</script>
+<p><button type="button" onclick="window.close()">Zamknij okno</button></p>
+</body></html>

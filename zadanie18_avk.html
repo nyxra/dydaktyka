@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pl-PL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zadanie 18 - Avksentieva 3F</title><style>body{font:16px Arial,sans-serif;margin:24px;color:#172b3a}h1{color:#155e75}label{display:inline-block;margin:6px}input{padding:7px;width:105px}button{padding:9px 13px;margin:5px;border:0;border-radius:5px;background:#087e8b;color:white;cursor:pointer}#wynik{margin-top:14px;line-height:1.7}</style></head><body>
+<h1>Zadanie 18: Funkcje matematyczne</h1><p>Veronika Avksentieva 3F gr. 1</p>
+<p>Oblicz sumę, różnicę, iloczyn, kwadraty obu liczb oraz resztę z dzielenia a przez b.</p><form id="formularz"><label>a<input id="a" type="number" step="any" value="7"></label> <label>b<input id="b" type="number" step="any" value="3"></label><br><button type="submit">Oblicz</button></form><div id="wynik" aria-live="polite"></div>
+<script>
+// Veronika Avksentieva 3F gr. 1 - Zadanie 18
+function suma_avk(a,b){return a+b;}
+function odejmowanie_avk(a,b){return a-b;}
+function mnozenie_avk(a,b){return a*b;}
+function od_kwadratu_avk(a,b){return [a*a,b*b];}
+function reszta_z_dzielenia_a_przez_b_avk(a,b){return a%b;}
+function oblicz(){var a=Number(document.getElementById('a').value),b=Number(document.getElementById('b').value);if(!Number.isFinite(a)||!Number.isFinite(b)||b===0){document.getElementById('wynik').textContent='Wprowadź liczby; b nie może być zerem dla reszty.';return;}var q=od_kwadratu_avk(a,b);document.getElementById('wynik').innerHTML='Suma: '+suma_avk(a,b)+'<br>Różnica: '+odejmowanie_avk(a,b)+'<br>Iloczyn: '+mnozenie_avk(a,b)+'<br>Kwadraty: '+a+'²='+q[0]+', '+b+'²='+q[1]+'<br>Reszta z dzielenia: '+reszta_z_dzielenia_a_przez_b_avk(a,b);}
+document.getElementById('formularz').addEventListener('submit', function(e) { e.preventDefault(); oblicz(); });
+</script>
+<p><button type="button" onclick="window.close()">Zamknij okno</button></p>
+</body></html>
